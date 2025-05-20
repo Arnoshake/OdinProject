@@ -1,0 +1,44 @@
+
+
+div {
+    color:crimson
+}
+
+.alert-text {
+  color: rgb(255, 0, 225);
+}
+.secondary-class{
+  font-weight: bold;
+}
+
+/* Dont feel the need to overuse ID function... classes often do the same job */
+#title{
+    background-color: blue;
+    text-align: center;
+}
+/* GROUPING COMMON ATTRIBUTES */
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  /* several unique declarations */
+  font-weight: bold;
+}
+
+.unread {
+  /* several unique declarations */
+  font-style:italic;
+}
+
+/* CHAINING selectors */
+.subsection.header {
+  color: red;
+}
+
+.subsection#preview {
+  color: blue;
+}
+/* you cannot chain more than one type selector.... an element cant be two diff types */
