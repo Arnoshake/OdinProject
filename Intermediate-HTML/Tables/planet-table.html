@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Planets Table</h1>
+    <table>
+        <colgroup>
+            <col span="2">
+            <col style = "border: 2px solid black">
+            <col span ="9">
+        </colgroup>
+        <!-- "tr>th{Header $}*4 -->
+        <tr>
+            <th rowspan="1" colspan="2"></th>
+            <th>Name</th>
+            <th>Mass<br>(10<sup>24</sup>kg)</th>
+            <th>Diameter<br>(km)</th>
+            <th>Density<br>(kg/m<sup>3</sup>)</th>
+            <th>Gravity<br>(m/s<sup>2</sup>)</th>
+            <th>Length of day<br>(hours)</th>
+            <th>Distance from Sun<br>(10<sup>6</sup>km)</th>
+            <th>Mean temperature<br>(°C)</th>
+            <th>Number of moons</th>
+            <th>Notes</th>
+        </tr>
+
+        <!-- tr*9>td{cell $}*11 -->
+        <tr>
+            <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
+    
+            <th>Mercery</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+            <td>cell a</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr>
+            <th>Venus</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr>
+            <th>Earth</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr>
+            <th>Mars</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr>
+            <th rowspan="4" colspan="1">Jovian planets</th>
+            <th rowspan="2" colspan="1">Gas giants</th>
+            <th>Jupiter</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr>
+            <th>Saturn</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr>
+            <th rowspan="2" colspan="1">Ice giants</th>
+            <th>Uranus</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr>
+            <th>Neptune</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr>
+            <th rowspan="2" colspan="2">Dwarf planets</th>
+            
+            <td>Pluto</td>
+            <th>cell 3</td>
+            <td>cell 4</td>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+        </tr>
+        <tr></tr>
+        
+      
+    </table>
+
+
+</body>
+
+</html>
