@@ -15,6 +15,10 @@ function Book(title, author, wordCount, haveRead) { // constructor
     this.haveRead = haveRead;
     this.bookId = crypto.randomUUID()
 }
+Book.prototype.toggleHasRead = function(){
+    this.haveRead = !(this.haveRead);
+    renderTable();
+}
 
 function addBookToLibrary(title, author, wordCount, haveRead) {
     const bookToAdd = new Book(title, author, wordCount, haveRead);
@@ -51,7 +55,12 @@ function addTableRow(book){ // rows are only added for a new book
     row.appendChild(wordCountCell);
 
     const haveReadCell = document.createElement("td");
-    haveReadCell.textContent = book.haveRead;
+    const toggleReadButton = document.createElement("button");
+    toggleReadButton.addEventListener("click", () =>{
+        book.toggleHasRead();
+    });
+    toggleReadButton.textContent = book.haveRead;
+    haveReadCell.appendChild(toggleReadButton);
     row.appendChild(haveReadCell);
 
     const deleteCell = document.createElement("td");
