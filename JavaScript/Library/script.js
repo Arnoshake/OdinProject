@@ -80,6 +80,18 @@ function renderTable(){
 }
 
 
+document.getElementById("add-book-form").addEventListener("submit",function(event){
+    event.preventDefault(); //forms reload page by default
+    
+    const bookTitle = document.getElementById("title").value;
+    const bookAuthor = document.getElementById("author").value;
+    const bookWordCount = parseInt(document.getElementById("wordCount").value);
+    const bookHaveRead = document.getElementById("read").checked;
+
+    addBookToLibrary(bookTitle, bookAuthor, bookWordCount, bookHaveRead);
+    console.log(myLibrary);
+});
+
 
 addBookToLibrary("Dune","Frank Herbert", 187240,true);
 addBookToLibrary("A Game of Thrones","George R.R Martin", 298000,true);
