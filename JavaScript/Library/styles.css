@@ -132,3 +132,9 @@ caption {
     justify-content: space-between;
     align-items: center;
 }
+.author-links{
+    display: flex;
+    justify-content:space-around
+}
+
+

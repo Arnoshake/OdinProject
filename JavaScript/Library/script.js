@@ -54,12 +54,26 @@ function addTableRow(book){ // rows are only added for a new book
     wordCountCell.textContent = book.wordCount;
     row.appendChild(wordCountCell);
 
+
     const haveReadCell = document.createElement("td");
     const toggleReadButton = document.createElement("button");
-    toggleReadButton.addEventListener("click", () =>{
+
+    toggleReadButton.textContent = book.haveRead;
+    toggleReadButton.classList.add("read-toggle");
+
+    // explicitly resetting the classes
+    if (book.haveRead) {
+        toggleReadButton.classList.add("read");
+        toggleReadButton.classList.remove("unread");
+    } else {
+        toggleReadButton.classList.add("unread");
+        toggleReadButton.classList.remove("read");
+    }
+
+    toggleReadButton.addEventListener("click", () => {
         book.toggleHasRead();
     });
-    toggleReadButton.textContent = book.haveRead;
+
     haveReadCell.appendChild(toggleReadButton);
     row.appendChild(haveReadCell);
 
